@@ -1,8 +1,27 @@
-# React + Vite
+# zhu_daniel_coding_assignment11
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Setup
 
-Currently, two official plugins are available:
+1. Clone the repository:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+git clone https://github.com/dzhu712/zhu_daniel_coding_assignment11
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd zhu_daniel_coding_assignment11
+```
+
+3. Build Docker image:
+
+```bash
+docker build -t zhu_daniel_coding_assignment11 .
+```
+
+4. Run Docker image and map ports:
+
+```bash
+docker run -d -p 7775:7775 zhu_daniel_coding_assignment11
+```
