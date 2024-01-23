@@ -1,31 +1,39 @@
-# zhu_daniel_coding_assignment11
+# React App with Vite in Docker
 
-## Setup
+This repository contains a React app built with Vite, and it provides instructions on how to run the app inside a Docker container.
 
-1. Clone the repository:
+## Prerequisites
 
-```bash
-git clone https://github.com/dzhu712/zhu_daniel_coding_assignment11
-```
+Before you begin, ensure that you have the following tools installed on your machine:
 
-2. Navigate to the project directory:
+- [Docker](https://www.docker.com/)
+- [Git](https://git-scm.com/)
 
-```bash
-cd zhu_daniel_coding_assignment11
-```
+## Running the App in a Docker Container
 
-3. Build Docker image:
+Follow the steps below to run the React app in a Docker container:
 
-```bash
-docker build -t zhu_daniel_coding_assignment11 .
-```
+1. Clone this repository to your local machine:
 
-4. Run Docker image and map ports:
+   ```bash
+   git clone https://github.com/dzhu712/zhu_daniel_coding_assignment11
+   cd zhu_daniel_coding_assignment11
+   ```
 
-```bash
-docker run -d -p 7775:7775 zhu_daniel_coding_assignment11
-```
+2. Build the Docker image:
 
-5. View the React app:
+   ```bash
+   docker build -t zhu_daniel_coding_assignment11 .
+   ```
 
-Open a web browser and visit [localhost:7775](http://localhost:7775/).
+3. Run the Docker container:
+
+   ```bash
+   docker run -d -p 7775:7775 zhu_daniel_coding_assignment11
+   ```
+
+   This command maps port 7775 on your local machine to port 7775 inside the Docker container.
+
+4. Open your browser and navigate to [http://localhost:7775](http://localhost:7775) to view the React app.
+
+Happy coding!
