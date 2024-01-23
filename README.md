@@ -25,3 +25,7 @@ docker build -t zhu_daniel_coding_assignment11 .
 ```bash
 docker run -d -p 7775:7775 zhu_daniel_coding_assignment11
 ```
+
+5. View the React app:
+
+Open a web browser and visit [localhost:7775](http://localhost:7775/).
