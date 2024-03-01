@@ -1,4 +1,4 @@
-# React App with Vite in Docker
+# Portfolio Website with Vite in Docker
 
 This repository contains a React app built with Vite, and it provides instructions on how to run the app inside a Docker container.
 
@@ -16,25 +16,25 @@ Follow the steps below to run the React app in a Docker container:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/dzhu712/zhu_daniel_coding_assignment11
-   cd zhu_daniel_coding_assignment11
+   git clone https://github.com/dzhu712/portfolio-website
+   cd portfolio-website
    ```
 
 2. Build the Docker image:
 
    ```bash
-   docker build -t zhu_daniel_coding_assignment11 .
+   docker build -t zhu_daniel_coding_assignment12 .
    ```
 
 3. Run the Docker container:
 
    ```bash
-   docker run -d -p 7775:7775 zhu_daniel_coding_assignment11
+   docker run -d -p 7775:5173 -p 8083:6006 zhu_daniel_coding_assignment12
    ```
 
-   This command maps port 7775 on your local machine to port 7775 inside the Docker container.
+   This command maps port 7775 and 8083 on your local machine to port 5173 and 6006, respectively inside the Docker container.
 
-4. Open your browser and navigate to [http://localhost:7775](http://localhost:7775) to view the React app.
+4. Open your browser and navigate to [http://localhost:7775](http://localhost:7775) to view the React app or [http://localhost:8083](http://localhost:8083) to view the Storybook.
 
 ## Dockerfile Explanation
 
@@ -67,7 +67,8 @@ COPY . .
 - Copies the rest of the application files from the host machine to the working directory in the container.
 
 ```Dockerfile
-EXPOSE 7775
+EXPOSE 5173
+EXPOSE 6006
 ```
 - Informs Docker that the container will listen on port 7775 at runtime.
 
