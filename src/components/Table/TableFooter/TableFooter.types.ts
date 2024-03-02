@@ -4,11 +4,11 @@ export type TableFooterProps = {
    */
   backgroundColor?: string;
   /**
-   * Table header contents
+   * Table footer contents
    */
   label: string;
   /**
-   * Whether the table header is disabled
+   * Whether the table footer is disabled
    */
   disabled?: boolean;
 };

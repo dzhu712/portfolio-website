@@ -1,3 +1,4 @@
+import React from "react";
 import type { LabelProps } from "./Label.types";
 import styled, { css } from "styled-components";
 
@@ -14,7 +15,7 @@ const StyledLabel = styled.label<{ $disabled?: boolean }>`
  * A customizable label component
  */
 export const Label = ({
-  backgroundColor = "transparent",
+  backgroundColor,
   color = "black",
   htmlFor,
   label,

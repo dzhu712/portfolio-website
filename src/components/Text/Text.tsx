@@ -41,7 +41,7 @@ const StyledText = styled.p<{ $size?: string; $bold?: boolean; $disabled?: boole
  * A customizable text component
  */
 export const Text = ({
-  backgroundColor = "transparent",
+  backgroundColor,
   color = "black",
   label,
   size = "small",

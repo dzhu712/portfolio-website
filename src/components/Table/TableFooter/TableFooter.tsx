@@ -3,8 +3,9 @@ import type { TableFooterProps } from "./TableFooter.types";
 import styled, { css } from "styled-components";
 
 const StyledTableFooter = styled.td<{ $disabled?: boolean; }>`
-  background-color: #F3F3F3;
   padding: 12px;
+  border: 1px solid #E5E5E5;
+  border-collapse: collapse;
 
   ${props => props.$disabled && css`
     opacity: 0.5;
@@ -16,7 +17,7 @@ const StyledTableFooter = styled.td<{ $disabled?: boolean; }>`
  * A customizable table footer component
  */
 export const TableFooter = ({
-  backgroundColor,
+  backgroundColor = "#F3F3F3",
   label,
   disabled = false,
   ...props

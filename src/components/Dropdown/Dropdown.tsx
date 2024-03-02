@@ -17,7 +17,7 @@ const StyledDropdown = styled.select`
  */
 export const Dropdown = ({
   backgroundColor,
-  options,
+  children,
   disabled = false,
   ...props
 }: DropdownProps) => {
@@ -27,7 +27,7 @@ export const Dropdown = ({
       disabled={disabled}
       {...props}
     >
-      {options}
+      {children}
     </StyledDropdown>
   );
 };

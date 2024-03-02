@@ -4,11 +4,11 @@ export type TableCellProps = {
    */
   backgroundColor?: string;
   /**
-   * Table header contents
+   * Table cell contents
    */
   label: string;
   /**
-   * Whether the table header is disabled
+   * Whether the table cell is disabled
    */
   disabled?: boolean;
 };

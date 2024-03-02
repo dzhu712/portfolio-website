@@ -1,4 +1,4 @@
-import React from "react";
+import { ReactElement } from "react";
 
 export type OptionProps = {
   /**
@@ -19,7 +19,7 @@ export type DropdownProps = {
   /**
    * Options in the dropdown
    */
-  options: React.ReactElement<OptionProps, 'option'>[];
+  children: ReactElement<OptionProps, 'option'> | ReactElement<OptionProps, 'option'>[];
   /**
    * Whether the text is disabled
    */

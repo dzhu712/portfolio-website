@@ -25,7 +25,7 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
   args: {
-    options: [
+    children: [
       <option key="1" value="option1">Option 1</option>,
       <option key="2" value="option2">Option 2</option>,
       <option key="3" value="option3">Option 3</option>,
@@ -35,7 +35,7 @@ export const Primary: Story = {
 
 export const Disabled: Story = {
   args: {
-    options: [
+    children: [
       <option key="1" value="option1">Option 1</option>,
       <option key="2" value="option2">Option 2</option>,
       <option key="3" value="option3">Option 3</option>,
