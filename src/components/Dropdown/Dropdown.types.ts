@@ -13,6 +13,10 @@ export type OptionProps = {
 
 export type DropdownProps = {
   /**
+   * What background color to use
+   */
+  backgroundColor?: string;
+  /**
    * Options in the dropdown
    */
   options: React.ReactElement<OptionProps, 'option'>[];

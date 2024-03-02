@@ -1,5 +1,9 @@
 export type RadioButtonProps = {
   /**
+   * What background color to use
+   */
+  backgroundColor?: string;
+  /**
    * Radio button id
    */
   id: string;

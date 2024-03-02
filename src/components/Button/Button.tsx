@@ -1,3 +1,4 @@
+import React from "react";
 import type { ButtonProps } from "./Button.types";
 import styled from "styled-components";
 

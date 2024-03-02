@@ -19,3 +19,36 @@ const meta = {
 } satisfies Meta<typeof Image>;
 
 export default meta;
+type Story = StoryObj<typeof meta>;
+
+// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
+export const Primary: Story = {
+  args: {
+    src: 'https://dzhu0.000webhostapp.com/images/hoops-teams.png',
+    alt: 'Image of the HoopsTeams front page.',
+  },
+};
+
+export const Small: Story = {
+  args: {
+    src: 'https://dzhu0.000webhostapp.com/images/hoops-teams.png',
+    alt: 'Image of the HoopsTeams front page.',
+    type: 'small',
+  },
+};
+
+export const Round: Story = {
+  args: {
+    src: 'https://dzhu0.000webhostapp.com/images/hoops-teams.png',
+    alt: 'Image of the HoopsTeams front page.',
+    type: 'round',
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    src: 'https://dzhu0.000webhostapp.com/images/hoops-teams.png',
+    alt: 'Image of the HoopsTeams front page.',
+    disabled: true,
+  },
+};
