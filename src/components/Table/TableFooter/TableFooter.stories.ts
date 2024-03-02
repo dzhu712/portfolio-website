@@ -19,3 +19,18 @@ const meta = {
 } satisfies Meta<typeof TableFooter>;
 
 export default meta;
+type Story = StoryObj<typeof meta>;
+
+// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
+export const Primary: Story = {
+  args: {
+    label: 'Table Footer',
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    label: 'Table Footer',
+    disabled: true,
+  },
+};

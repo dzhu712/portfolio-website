@@ -16,7 +16,7 @@ export type ImageProps = {
    */
   alt: string;
   /**
-   * Whether the button is disabled
+   * Whether the image is disabled
    */
   disabled?: boolean;
 };

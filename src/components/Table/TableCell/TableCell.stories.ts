@@ -19,3 +19,18 @@ const meta = {
 } satisfies Meta<typeof TableCell>;
 
 export default meta;
+type Story = StoryObj<typeof meta>;
+
+// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
+export const Primary: Story = {
+  args: {
+    label: 'Table Cell',
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    label: 'Table Cell',
+    disabled: true,
+  },
+};

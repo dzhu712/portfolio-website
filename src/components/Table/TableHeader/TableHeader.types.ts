@@ -8,7 +8,7 @@ export type TableHeaderProps = {
    */
   label: string;
   /**
-   * Whether the button is disabled
+   * Whether the table header is disabled
    */
   disabled?: boolean;
 };
