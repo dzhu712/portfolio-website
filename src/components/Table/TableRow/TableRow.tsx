@@ -3,6 +3,8 @@ import type { TableRowProps } from "./TableRow.types";
 import styled, { css } from "styled-components";
 
 const StyledTableRow = styled.tr<{ $disabled?: boolean; }>`
+  display: flex;
+
   ${props => props.$disabled && css`
     opacity: 0.5;
     cursor: not-allowed;

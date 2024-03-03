@@ -3,11 +3,11 @@ import type { TableHeaderProps } from "./TableHeader.types";
 import styled, { css } from "styled-components";
 
 const StyledTableHeader = styled.th<{ $disabled?: boolean; }>`
+  flex: 1;
   font-weight: normal;
   color: white;
   padding: 12px;
   border: 1px solid #E5E5E5;
-  border-collapse: collapse;
 
   ${props => props.$disabled && css`
     opacity: 0.5;
