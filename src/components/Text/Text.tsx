@@ -17,6 +17,8 @@ const sizeMobileMapping = {
 const findSize = (mapping: object, size: string) => Object.entries(mapping).find(item => item[0] === size)?.[1] || size;
 
 const StyledText = styled.p<{ $size?: string; $bold?: boolean; $disabled?: boolean; }>`
+  margin: 0;
+
   ${props => props.$size && css`
     font-size: ${findSize(sizeDesktopMapping, props.$size)};
   `}

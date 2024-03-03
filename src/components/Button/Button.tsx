@@ -4,14 +4,13 @@ import styled from "styled-components";
 
 const StyledButton = styled.button`
   color: white;
-  opacity: 0.8;
   border: none;
   border-radius: 6px;
   padding: 12px 36px;
   cursor: pointer;
 
   &:hover {
-    opacity: 1;
+    filter: brightness(0.9);
   }
 
   &:not(:disabled):active {
@@ -28,7 +27,7 @@ const StyledButton = styled.button`
  * A customizable button component
  */
 export const Button = ({
-  backgroundColor = "#138DDF",
+  backgroundColor = "#18A0FB",
   label,
   disabled = false,
   ...props
