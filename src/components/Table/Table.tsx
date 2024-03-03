@@ -3,6 +3,7 @@ import type { TableProps } from "./Table.types";
 import styled, { css } from "styled-components";
 
 const StyledTable = styled.table<{ $disabled?: boolean; }>`
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-collapse: collapse;
 
   ${props => props.$disabled && css`

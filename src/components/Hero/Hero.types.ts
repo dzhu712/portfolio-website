@@ -1,5 +1,4 @@
 import { ReactElement } from 'react';
-import { Image } from '../Image';
 import { Text } from '../Text';
 import { Button } from '../Button';
 

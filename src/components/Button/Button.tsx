@@ -3,6 +3,7 @@ import type { ButtonProps } from "./Button.types";
 import styled from "styled-components";
 
 const StyledButton = styled.button`
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   border: none;
   border-radius: 6px;

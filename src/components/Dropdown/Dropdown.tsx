@@ -3,6 +3,7 @@ import type { DropdownProps } from "./Dropdown.types";
 import styled from "styled-components";
 
 const StyledDropdown = styled.select`
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 2px;
   border: 2px solid #138DDF;
 

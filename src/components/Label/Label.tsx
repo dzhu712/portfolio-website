@@ -3,6 +3,7 @@ import type { LabelProps } from "./Label.types";
 import styled, { css } from "styled-components";
 
 const StyledLabel = styled.label<{ $disabled?: boolean }>`
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   cursor: pointer;
 
   ${props => props.$disabled && css`

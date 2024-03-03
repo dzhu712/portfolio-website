@@ -3,6 +3,7 @@ import type { TableRowProps } from "./TableRow.types";
 import styled, { css } from "styled-components";
 
 const StyledTableRow = styled.tr<{ $disabled?: boolean; }>`
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
 
   ${props => props.$disabled && css`

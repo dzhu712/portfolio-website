@@ -3,6 +3,7 @@ import type { TableHeaderProps } from "./TableHeader.types";
 import styled, { css } from "styled-components";
 
 const StyledTableHeader = styled.th<{ $disabled?: boolean; }>`
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   flex: 1;
   font-weight: normal;
   color: white;

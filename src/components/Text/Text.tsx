@@ -17,6 +17,7 @@ const sizeMobileMapping = {
 const findSize = (mapping: object, size: string) => Object.entries(mapping).find(item => item[0] === size)?.[1] || size;
 
 const StyledText = styled.p<{ $size?: string; $bold?: boolean; $disabled?: boolean; }>`
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
 
   ${props => props.$size && css`

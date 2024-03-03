@@ -3,6 +3,7 @@ import type { TableFooterProps } from "./TableFooter.types";
 import styled, { css } from "styled-components";
 
 const StyledTableFooter = styled.td<{ $disabled?: boolean; }>`
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   flex: 1;
   padding: 12px;
   border: 1px solid #E5E5E5;
